@@ -1,11 +1,11 @@
 {
   "name": "inline-html-styles",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Inline (Tailwind) CSS stylesheets into HTML style attributes.",
   "author": "RayJason <https://github.com/RayJason>",
   "license": "MIT",
-  "homepage": "https://github.com/RayJason/inline-styles",
-  "repository": "RayJason/inline-styles",
+  "homepage": "https://github.com/RayJason/inline-html-styles",
+  "repository": "RayJason/inline-html-styles",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
