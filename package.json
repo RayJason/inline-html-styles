@@ -1,0 +1,44 @@
+{
+  "name": "inline-html-styles",
+  "version": "1.0.0",
+  "description": "Inline (Tailwind) CSS stylesheets into HTML style attributes.",
+  "author": "RayJason",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsc && terser dist/index.js -o dist/index.js --compress --mangle",
+    "test": "vitest"
+  },
+  "keywords": [
+    "inline-style",
+    "css",
+    "html",
+    "email",
+    "esnext",
+    "bun",
+    "juice",
+    "postcss",
+    "postcss-calc",
+    "typescript",
+    "vitest",
+    "inline-css"
+  ],
+  "dependencies": {
+    "juice": "^9.1.0",
+    "postcss": "^8.4.30",
+    "postcss-calc": "^9.0.1"
+  },
+  "devDependencies": {
+    "terser": "^5.20.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.5"
+  }
+}
