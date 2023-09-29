@@ -12,6 +12,7 @@ const CLASS_ATTRIBUTE_REGEX = / class="[^"]*"/g
 /**
  * 将 CSS 变量转换为静态值
  * Convert CSS variables to static values
+ * Reference https://github.com/jakobo/codedrift/discussions/104
  * @param {string} style
  * @returns {string}
  */
