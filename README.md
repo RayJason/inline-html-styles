@@ -7,9 +7,11 @@ Inline (Tailwind) CSS stylesheets into HTML style attributes.
 ![Static Badge](https://img.shields.io/badge/inline--html--styles-blue?logo=npm&link=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Finline-html-styles)
 ![npm](https://img.shields.io/npm/v/inline-html-styles)
 ![npm bundle size](https://img.shields.io/bundlephobia/min/inline-html-styles)
-![NPM](https://img.shields.io/npm/l/inline-html-styles)
+![LICENSE](https://img.shields.io/npm/l/inline-html-styles)
 
 </div>
+
+English | [中文](./README-zh_CN.md)
 
 ## ✨ Features
 
