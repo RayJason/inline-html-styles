@@ -1,6 +1,6 @@
 {
   "name": "inline-html-styles",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Inline (Tailwind) CSS stylesheets into HTML style attributes.",
   "author": "RayJason <https://github.com/RayJason>",
   "license": "MIT",

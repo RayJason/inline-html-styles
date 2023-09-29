@@ -143,6 +143,24 @@ const result = inlineStylesIntoHtml(html, css)
 // 结果：<div style="width: 160px; margin-top: 16px; height: calc(100vh - 64px); color: #888888;"></div>
 ```
 
+## 🧩 API
+
+### inlineStyles(html, css, options)
+
+#### options.remToPx
+
+是否将 `rem` 转换为 `px`。
+
+类型：`boolean`  
+默认值：`true`
+
+#### options.convertCssVariables
+
+是否将 CSS 变量转换为静态。
+
+类型：`boolean`  
+默认值：`true`
+
 ### 参考
 
 - [Tailwind CSS for Email](https://github.com/jakobo/codedrift/discussions/104)

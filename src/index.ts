@@ -46,18 +46,28 @@ const handleCssVariables = (style: string): string => {
 }
 
 /**
+ * 配置
+ * Config
+ * @interface Config
+ * @property {boolean} remToPx 是否将 CSS 单位 rem 转换为 px
+ * @property {boolean} convertCssVariables 是否将 CSS 变量转换为常量
+ */
+interface Options {
+  remToPx?: boolean
+  convertCssVariables?: boolean
+}
+
+/**
  * 将 CSS 处理并内联到 HTML 中
  * Process and inline CSS into HTML
  * @param {string} html
  * @param {string} css
- * @param {boolean} remToPx 是否将 rem 转换为 px / Convert CSS units from rem to px?
+ * @param {Options} options
  * @returns {string}
  */
-const inlineStyles = (
-  html: string,
-  css: string,
-  remToPx: boolean = true
-): string => {
+const inlineStyles = (html: string, css: string, options?: Options): string => {
+  const { remToPx = true, convertCssVariables = true } = options || {}
+
   // 将 CSS 单位 rem 转换为 px
   // Convert CSS units from rem to px
   const basePx = 16
@@ -71,7 +81,10 @@ const inlineStyles = (
 
   // 将 CSS 变量转换为常量
   // Convert CSS variables to static
-  const cssWithoutVariables = handleCssVariables(cssWithUnitConversion)
+  let cssWithoutVariables = cssWithUnitConversion
+  if (convertCssVariables) {
+    cssWithoutVariables = handleCssVariables(cssWithUnitConversion)
+  }
 
   // 简化 calc() 表达式
   // Simplify calc() expressions
