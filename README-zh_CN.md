@@ -47,7 +47,7 @@ yarn add inline-html-styles
 npm install inline-html-styles
 ```
 
-你也可以添加 -D 参数将其安装为开发依赖项，具体取决于你的项目或使用场景。
+你也可以添加 `-D` 参数将其安装为开发依赖项，具体取决于你的项目或使用场景。
 
 ## 🔨 使用
 
@@ -161,7 +161,7 @@ const result = inlineStylesIntoHtml(html, css)
 类型：`boolean`  
 默认值：`true`
 
-### 参考
+### 📖 参考
 
 - [Tailwind CSS for Email](https://github.com/jakobo/codedrift/discussions/104)
 - [juice](https://github.com/Automattic/juice)

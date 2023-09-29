@@ -47,7 +47,7 @@ yarn add inline-html-styles
 npm install inline-html-styles
 ```
 
-You can also add -D to install it as a development dependency, depending on your project or usage scenario.
+You can also add `-D` to install it as a development dependency, depending on your project or usage scenario.
 
 ## 🔨 Usage
 
@@ -175,7 +175,7 @@ Whether to convert CSS variables to static.
 Type: `boolean`  
 Default: `true`
 
-## Reference
+## 📖 Reference
 
 - [Tailwind CSS for Email](https://github.com/jakobo/codedrift/discussions/104)
 - [juice](https://github.com/Automattic/juice)
